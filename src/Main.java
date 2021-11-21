@@ -31,9 +31,6 @@ public class Main {
             al.add(9,"10");
             al.add(19,"100");
 
-
-
-
         }
 
 
