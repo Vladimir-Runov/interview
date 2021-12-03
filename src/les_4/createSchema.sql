@@ -88,11 +88,3 @@ COMMENT = '	';
 
 
 
-SELECT t.*, film.* , st.SrartTime, DATE_ADD(st.SrartTime, INTERVAL  dur.DurationMinutes  MINUTE) as Finish, dur.DurationMinutes
-FROM les_i.ttickets as t
-left join les_i.tfilms as film on film.pk = t.pkFilm
-left join les_i.tfilmduration as dur on dur.pk = film.pkDuration
-left join les_i.tsrarttimes as st on st.pk = t.pkFilmTime
-
-order by st.SrartTime
-/* CREATE TEMPORARY TABLE `tmp_table */
