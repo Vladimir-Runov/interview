@@ -12,3 +12,4 @@ WHERE DATE_ADD(t.SrartTime, INTERVAL  dur.DurationMinutes  MINUTE) > SOME (
 )
 order by t.SrartTime
 
+
