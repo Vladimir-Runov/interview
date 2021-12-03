@@ -13,3 +13,10 @@ WHERE DATE_ADD(t.SrartTime, INTERVAL  dur.DurationMinutes  MINUTE) > SOME (
 order by t.SrartTime
 
 
+
+select t.SrartTime,  Sum(tp.Price)
+FROM ttickets as tk
+inner join tfilms as f on f.pk = tk.pkFilm
+inner join tsrarttimes as t on t.pk = tk.pkFilmTime
+inner join tticketprices as tp on tp.pk = tk.pkPrce
+group by t.SrartTime
