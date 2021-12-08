@@ -16,22 +16,20 @@ public class HwServlet implements Servlet {
 
     @Override
     public ServletConfig getServletConfig() {
-        return null;
+        return this.sc;
     }
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         servletResponse.getWriter().println("<h1>Hello world !</h1>");
-
     }
 
     @Override
     public String getServletInfo() {
-        return null;
+        return "servlet @servlet-app";
     }
 
     @Override
     public void destroy() {
-
     }
 }

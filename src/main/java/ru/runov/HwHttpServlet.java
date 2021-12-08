@@ -13,7 +13,7 @@ public class HwHttpServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>Привет от сервлета  hello </h1>");
+        resp.getWriter().println("<h1>hello word!!</h1>");
     }
 
 }
